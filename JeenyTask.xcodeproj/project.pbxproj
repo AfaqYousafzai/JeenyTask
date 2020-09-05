@@ -39,6 +39,7 @@
 		A6208B932503EB3C009E818F /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6208B8B2503EB3C009E818F /* Configurations.plist */; };
 		A6208B962503EB95009E818F /* JeenyConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B952503EB95009E818F /* JeenyConfigurations.swift */; };
 		A6208B982503EE3C009E818F /* JeenyGeneralElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */; };
+		A6208B9B2504004D009E818F /* BooksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B9A2504004D009E818F /* BooksRequest.swift */; };
 		E4D714B6A2E986D5F564D16E /* Pods_JeenyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E0D2AF3A1015A2DA8F933 /* Pods_JeenyTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		A6208B8B2503EB3C009E818F /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
 		A6208B952503EB95009E818F /* JeenyConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyConfigurations.swift; sourceTree = "<group>"; };
 		A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyGeneralElements.swift; sourceTree = "<group>"; };
+		A6208B9A2504004D009E818F /* BooksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRequest.swift; sourceTree = "<group>"; };
 		B6E0C50DE6CCED7CAE7DDB1C /* Pods_JeenyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeenyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.release.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,9 +185,9 @@
 		A60C9AC125039802001C813D /* JeenyTask */ = {
 			isa = PBXGroup;
 			children = (
-				A6208B822503EA74009E818F /* SupportingFiles */,
 				A60C9AF325039961001C813D /* Modules */,
 				A60C9AF225039886001C813D /* App */,
+				A6208B822503EA74009E818F /* SupportingFiles */,
 				A60C9AF5250399BC001C813D /* StoryBoards */,
 				A60C9ACB25039803001C813D /* Assets.xcassets */,
 				A60C9AD025039803001C813D /* Info.plist */,
@@ -231,6 +233,7 @@
 		A60C9AF42503997E001C813D /* Books */ = {
 			isa = PBXGroup;
 			children = (
+				A6208B992503FFEF009E818F /* Requests */,
 				A60C9B0325039FAC001C813D /* Models */,
 				A60C9B0225039F9A001C813D /* Protocols */,
 				A60C9B0125039F8C001C813D /* Router */,
@@ -311,10 +314,10 @@
 		A6208B822503EA74009E818F /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A6208B842503EB3C009E818F /* NetworkHandlers */,
 				A6208B832503EB3C009E818F /* APIEndPoints.swift */,
 				A6208B872503EB3C009E818F /* Base Classes */,
 				A6208B892503EB3C009E818F /* Configurations */,
-				A6208B842503EB3C009E818F /* NetworkHandlers */,
 				A6208B8C2503EB3C009E818F /* Shared Elements */,
 			);
 			path = SupportingFiles;
@@ -352,6 +355,14 @@
 				A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */,
 			);
 			path = "Shared Elements";
+			sourceTree = "<group>";
+		};
+		A6208B992503FFEF009E818F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A6208B9A2504004D009E818F /* BooksRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -594,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6208B9B2504004D009E818F /* BooksRequest.swift in Sources */,
 				A60C9B102503A037001C813D /* SaleInfo.swift in Sources */,
 				A60C9AC725039802001C813D /* BooksVC.swift in Sources */,
 				A60C9AFB25039F2A001C813D /* BooksInteractor.swift in Sources */,

@@ -2,29 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AFSSettings</key>
+	<key>JeenySettings</key>
 	<dict>
 		<key>Environment</key>
 		<dict>
 			<key>QA</key>
 			<dict>
 				<key>BaseURL</key>
-				<string>http://192.168.1.157:8081/</string>
+				<string>https://www.googleapis.com/</string>
 			</dict>
 			<key>Production</key>
 			<dict>
 				<key>BaseURL</key>
-				<string>https://production.weareiapps.com:8081/</string>
+				<string>https://www.googleapis.com/</string>
 			</dict>
 			<key>Staging</key>
 			<dict>
 				<key>BaseURL</key>
-				<string>https://staging.weareiapps.com:8081/</string>
+				<string>https://www.googleapis.com/</string>
 			</dict>
 			<key>Development</key>
 			<dict>
 				<key>BaseURL</key>
-				<string>http://192.168.1.23:8081/afs-user-service/</string>
+				<string>https://www.googleapis.com/</string>
 			</dict>
 		</dict>
 	</dict>

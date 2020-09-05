@@ -15,41 +15,51 @@ class BooksPresenter: ViewToPresenterBooksProtocol {
     var interactor: PresenterToInteractorBooksProtocol?
     var router: PresenterToRouterBooksProtocol?
     
+    var counter : Int?
+    
     // MARK: Inputs from view
     func viewDidLoad() {
         print("Presenter is being notified that the View was loaded.")
-        //view?.showHUD()
+        view?.showHUD()
         interactor?.loadBooks()
     }
     
     func refresh() {
         print("Presenter is being notified that the View was refreshed.")
         interactor?.loadBooks()
-    }    
+    }
+    
+    func numberOfRowsInSection() -> Int {
+        guard let countItems = self.counter else {
+            return 0
+        }
+        
+        return countItems
+    }
     
 }
 
 // MARK: - Outputs to view
 extension BooksPresenter: InteractorToPresenterBooksProtocol {
     
-    func fetchQuotesSuccess(items: [Items]) {
+    func fetchBooksSuccess(items: [Items]) {
         print("Presenter receives the result from Interactor after it's done its job.")
-        
+        counter = items.count
         view?.hideHUD()
         view?.onFetchQuotesSuccess()
     }
     
-    func fetchQuotesFailure(errorCode: Int) {
+    func fetchBooksFailure(errorCode: Int) {
         print("Presenter receives the result from Interactor after it's done its job.")
         view?.hideHUD()
         view?.onFetchQuotesFailure(error: "Couldn't fetch quotes: \(errorCode)")
     }
     
-    func getQuoteSuccess(_ item: Items) {
+    func getBooksSuccess(_ item: Items) {
         router?.pushToQuoteDetail(on: view!, with: item)
     }
     
-    func getQuoteFailure() {
+    func getBooksFailure() {
         view?.hideHUD()
         print("Couldn't retrieve quote by index")
     }

@@ -25,6 +25,8 @@ protocol ViewToPresenterBooksProtocol: class {
     var view: PresenterToViewBooksProtocol? { get set }
     var interactor: PresenterToInteractorBooksProtocol? { get set }
     var router: PresenterToRouterBooksProtocol? { get set }
+    
+    func numberOfRowsInSection() -> Int
 
     func viewDidLoad()
     
@@ -45,11 +47,11 @@ protocol PresenterToInteractorBooksProtocol: class {
 // MARK: Interactor Output (Interactor -> Presenter)
 protocol InteractorToPresenterBooksProtocol: class {
     
-    func fetchQuotesSuccess(items: [Items])
-    func fetchQuotesFailure(errorCode: Int)
+    func fetchBooksSuccess(items: [Items])
+    func fetchBooksFailure(errorCode: Int)
     
-    func getQuoteSuccess(_ item: Items)
-    func getQuoteFailure()
+    func getBooksSuccess(_ item: Items)
+    func getBooksFailure()
     
 }
 

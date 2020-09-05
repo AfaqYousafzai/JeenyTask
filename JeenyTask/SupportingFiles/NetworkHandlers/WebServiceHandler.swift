@@ -8,19 +8,17 @@
 
 import UIKit
 import Alamofire
+import PKHUD
 
 class WebServiceHandler{
     
     // generic base url will be set here on app level
     static var baseUrl = JeenyConfigurations.getBaseURL()
-
-    
-    
-    
-    static func callWebService(request: BaseRequest, completion: @escaping (_ result: Data?, _ error: Error?) -> Void){
+    static func callWebService(request: BaseRequest, completion: @escaping (_ result: Data?, _ error: Error?, _ code: Int) -> Void){
         
         //checking for internet reachability
         if JeenyGeneralElements.shared.internetConnectivity == .none {
+            HUD.hide()
             JeenyGeneralElements.showAlertWithMessage("No Internet Connection", sender: nil)
             return
         }
@@ -47,9 +45,14 @@ class WebServiceHandler{
             
             switch response.result{
             case .success(let result):
-                completion(result, nil)
+                if let httpStatusCode = response.response?.statusCode {
+                    completion(result, nil, httpStatusCode)
+                }
+                
             case .failure(let error):
-                completion(nil, error)
+                if let httpStatusCode = response.response?.statusCode {
+                    completion(nil, error, httpStatusCode)
+                }
             }
             
         }

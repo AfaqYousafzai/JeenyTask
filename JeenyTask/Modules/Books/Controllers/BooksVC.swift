@@ -15,6 +15,10 @@ class BooksVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         setupController()
         setupUI()
         presenter?.viewDidLoad()
@@ -65,12 +69,12 @@ extension BooksVC: PresenterToViewBooksProtocol{
 extension BooksVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return presenter?.numberOfRowsInSection() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        
+        cell.textLabel?.text = "\(indexPath.row)"
         return cell
     }
     

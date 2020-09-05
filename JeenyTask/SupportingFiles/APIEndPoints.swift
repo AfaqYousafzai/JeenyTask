@@ -10,7 +10,7 @@ import Foundation
 
 enum APIEndPoints {
     
-    enum OTPEndPoint: String {
-        case V1 = "v1/bankId/twilio-otp/generate"
+    enum BooksEndPoint: String {
+        case V1 = "books/v1/volumes?q=isbn:0747532699"
     }
 }
