@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60C9AC325039802001C813D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AC225039802001C813D /* AppDelegate.swift */; };
+		A60C9AC525039802001C813D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AC425039802001C813D /* SceneDelegate.swift */; };
+		A60C9AC725039802001C813D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AC625039802001C813D /* ViewController.swift */; };
+		A60C9ACA25039802001C813D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C9AC825039802001C813D /* Main.storyboard */; };
+		A60C9ACC25039803001C813D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C9ACB25039803001C813D /* Assets.xcassets */; };
+		A60C9ACF25039803001C813D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C9ACD25039803001C813D /* LaunchScreen.storyboard */; };
+		A60C9ADA25039803001C813D /* JeenyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AD925039803001C813D /* JeenyTaskTests.swift */; };
+		A60C9AE525039803001C813D /* JeenyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AE425039803001C813D /* JeenyTaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60C9AD625039803001C813D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60C9AB725039802001C813D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60C9ABE25039802001C813D;
+			remoteInfo = JeenyTask;
+		};
+		A60C9AE125039803001C813D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60C9AB725039802001C813D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60C9ABE25039802001C813D;
+			remoteInfo = JeenyTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A60C9ABF25039802001C813D /* JeenyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeenyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60C9AC225039802001C813D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A60C9AC425039802001C813D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A60C9AC625039802001C813D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A60C9AC925039802001C813D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A60C9ACB25039803001C813D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60C9ACE25039803001C813D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60C9AD025039803001C813D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60C9AD525039803001C813D /* JeenyTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeenyTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60C9AD925039803001C813D /* JeenyTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyTaskTests.swift; sourceTree = "<group>"; };
+		A60C9ADB25039803001C813D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60C9AE025039803001C813D /* JeenyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeenyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60C9AE425039803001C813D /* JeenyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyTaskUITests.swift; sourceTree = "<group>"; };
+		A60C9AE625039803001C813D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60C9ABC25039802001C813D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60C9AD225039803001C813D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60C9ADD25039803001C813D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60C9AB625039802001C813D = {
+			isa = PBXGroup;
+			children = (
+				A60C9AC125039802001C813D /* JeenyTask */,
+				A60C9AD825039803001C813D /* JeenyTaskTests */,
+				A60C9AE325039803001C813D /* JeenyTaskUITests */,
+				A60C9AC025039802001C813D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A60C9AC025039802001C813D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9ABF25039802001C813D /* JeenyTask.app */,
+				A60C9AD525039803001C813D /* JeenyTaskTests.xctest */,
+				A60C9AE025039803001C813D /* JeenyTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60C9AC125039802001C813D /* JeenyTask */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AC225039802001C813D /* AppDelegate.swift */,
+				A60C9AC425039802001C813D /* SceneDelegate.swift */,
+				A60C9AC625039802001C813D /* ViewController.swift */,
+				A60C9AC825039802001C813D /* Main.storyboard */,
+				A60C9ACB25039803001C813D /* Assets.xcassets */,
+				A60C9ACD25039803001C813D /* LaunchScreen.storyboard */,
+				A60C9AD025039803001C813D /* Info.plist */,
+			);
+			path = JeenyTask;
+			sourceTree = "<group>";
+		};
+		A60C9AD825039803001C813D /* JeenyTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AD925039803001C813D /* JeenyTaskTests.swift */,
+				A60C9ADB25039803001C813D /* Info.plist */,
+			);
+			path = JeenyTaskTests;
+			sourceTree = "<group>";
+		};
+		A60C9AE325039803001C813D /* JeenyTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AE425039803001C813D /* JeenyTaskUITests.swift */,
+				A60C9AE625039803001C813D /* Info.plist */,
+			);
+			path = JeenyTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60C9ABE25039802001C813D /* JeenyTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60C9AE925039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTask" */;
+			buildPhases = (
+				A60C9ABB25039802001C813D /* Sources */,
+				A60C9ABC25039802001C813D /* Frameworks */,
+				A60C9ABD25039802001C813D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JeenyTask;
+			productName = JeenyTask;
+			productReference = A60C9ABF25039802001C813D /* JeenyTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60C9AD425039803001C813D /* JeenyTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60C9AEC25039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTaskTests" */;
+			buildPhases = (
+				A60C9AD125039803001C813D /* Sources */,
+				A60C9AD225039803001C813D /* Frameworks */,
+				A60C9AD325039803001C813D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60C9AD725039803001C813D /* PBXTargetDependency */,
+			);
+			name = JeenyTaskTests;
+			productName = JeenyTaskTests;
+			productReference = A60C9AD525039803001C813D /* JeenyTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A60C9ADF25039803001C813D /* JeenyTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60C9AEF25039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTaskUITests" */;
+			buildPhases = (
+				A60C9ADC25039803001C813D /* Sources */,
+				A60C9ADD25039803001C813D /* Frameworks */,
+				A60C9ADE25039803001C813D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60C9AE225039803001C813D /* PBXTargetDependency */,
+			);
+			name = JeenyTaskUITests;
+			productName = JeenyTaskUITests;
+			productReference = A60C9AE025039803001C813D /* JeenyTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60C9AB725039802001C813D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Afaq Ahmad";
+				TargetAttributes = {
+					A60C9ABE25039802001C813D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A60C9AD425039803001C813D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A60C9ABE25039802001C813D;
+					};
+					A60C9ADF25039803001C813D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A60C9ABE25039802001C813D;
+					};
+				};
+			};
+			buildConfigurationList = A60C9ABA25039802001C813D /* Build configuration list for PBXProject "JeenyTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60C9AB625039802001C813D;
+			productRefGroup = A60C9AC025039802001C813D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60C9ABE25039802001C813D /* JeenyTask */,
+				A60C9AD425039803001C813D /* JeenyTaskTests */,
+				A60C9ADF25039803001C813D /* JeenyTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60C9ABD25039802001C813D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60C9ACF25039803001C813D /* LaunchScreen.storyboard in Resources */,
+				A60C9ACC25039803001C813D /* Assets.xcassets in Resources */,
+				A60C9ACA25039802001C813D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60C9AD325039803001C813D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60C9ADE25039803001C813D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60C9ABB25039802001C813D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60C9AC725039802001C813D /* ViewController.swift in Sources */,
+				A60C9AC325039802001C813D /* AppDelegate.swift in Sources */,
+				A60C9AC525039802001C813D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60C9AD125039803001C813D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60C9ADA25039803001C813D /* JeenyTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60C9ADC25039803001C813D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60C9AE525039803001C813D /* JeenyTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60C9AD725039803001C813D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60C9ABE25039802001C813D /* JeenyTask */;
+			targetProxy = A60C9AD625039803001C813D /* PBXContainerItemProxy */;
+		};
+		A60C9AE225039803001C813D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60C9ABE25039802001C813D /* JeenyTask */;
+			targetProxy = A60C9AE125039803001C813D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A60C9AC825039802001C813D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60C9AC925039802001C813D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A60C9ACD25039803001C813D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60C9ACE25039803001C813D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60C9AE725039803001C813D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A60C9AE825039803001C813D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A60C9AEA25039803001C813D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB3VY6DYSB;
+				INFOPLIST_FILE = JeenyTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeenyTask.App.JeenyTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60C9AEB25039803001C813D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB3VY6DYSB;
+				INFOPLIST_FILE = JeenyTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeenyTask.App.JeenyTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A60C9AED25039803001C813D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB3VY6DYSB;
+				INFOPLIST_FILE = JeenyTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeenyTask.App.JeenyTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JeenyTask.app/JeenyTask";
+			};
+			name = Debug;
+		};
+		A60C9AEE25039803001C813D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB3VY6DYSB;
+				INFOPLIST_FILE = JeenyTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeenyTask.App.JeenyTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JeenyTask.app/JeenyTask";
+			};
+			name = Release;
+		};
+		A60C9AF025039803001C813D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB3VY6DYSB;
+				INFOPLIST_FILE = JeenyTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeenyTask.App.JeenyTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JeenyTask;
+			};
+			name = Debug;
+		};
+		A60C9AF125039803001C813D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RB3VY6DYSB;
+				INFOPLIST_FILE = JeenyTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeenyTask.App.JeenyTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JeenyTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60C9ABA25039802001C813D /* Build configuration list for PBXProject "JeenyTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60C9AE725039803001C813D /* Debug */,
+				A60C9AE825039803001C813D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60C9AE925039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60C9AEA25039803001C813D /* Debug */,
+				A60C9AEB25039803001C813D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60C9AEC25039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60C9AED25039803001C813D /* Debug */,
+				A60C9AEE25039803001C813D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60C9AEF25039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60C9AF025039803001C813D /* Debug */,
+				A60C9AF125039803001C813D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60C9AB725039802001C813D /* Project object */;
+}
