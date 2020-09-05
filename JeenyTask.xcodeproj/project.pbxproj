@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,13 @@
 		A60C9B172503A037001C813D /* AccessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0C2503A037001C813D /* AccessInfo.swift */; };
 		A60C9B182503A037001C813D /* ImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0D2503A037001C813D /* ImageLinks.swift */; };
 		A60C9B192503A037001C813D /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0E2503A037001C813D /* Pdf.swift */; };
+		A6208B8E2503EB3C009E818F /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B832503EB3C009E818F /* APIEndPoints.swift */; };
+		A6208B8F2503EB3C009E818F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B852503EB3C009E818F /* Reachability.swift */; };
+		A6208B902503EB3C009E818F /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B862503EB3C009E818F /* WebServiceHandler.swift */; };
+		A6208B912503EB3C009E818F /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B882503EB3C009E818F /* BaseRequest.swift */; };
+		A6208B932503EB3C009E818F /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6208B8B2503EB3C009E818F /* Configurations.plist */; };
+		A6208B962503EB95009E818F /* JeenyConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B952503EB95009E818F /* JeenyConfigurations.swift */; };
+		A6208B982503EE3C009E818F /* JeenyGeneralElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */; };
 		E4D714B6A2E986D5F564D16E /* Pods_JeenyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E0D2AF3A1015A2DA8F933 /* Pods_JeenyTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +92,13 @@
 		A60C9B0C2503A037001C813D /* AccessInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessInfo.swift; sourceTree = "<group>"; };
 		A60C9B0D2503A037001C813D /* ImageLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLinks.swift; sourceTree = "<group>"; };
 		A60C9B0E2503A037001C813D /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		A6208B832503EB3C009E818F /* APIEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		A6208B852503EB3C009E818F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A6208B862503EB3C009E818F /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		A6208B882503EB3C009E818F /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		A6208B8B2503EB3C009E818F /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
+		A6208B952503EB95009E818F /* JeenyConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyConfigurations.swift; sourceTree = "<group>"; };
+		A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyGeneralElements.swift; sourceTree = "<group>"; };
 		B6E0C50DE6CCED7CAE7DDB1C /* Pods_JeenyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeenyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.release.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +155,6 @@
 				C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */,
 				D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -170,6 +183,7 @@
 		A60C9AC125039802001C813D /* JeenyTask */ = {
 			isa = PBXGroup;
 			children = (
+				A6208B822503EA74009E818F /* SupportingFiles */,
 				A60C9AF325039961001C813D /* Modules */,
 				A60C9AF225039886001C813D /* App */,
 				A60C9AF5250399BC001C813D /* StoryBoards */,
@@ -294,6 +308,52 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A6208B822503EA74009E818F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A6208B832503EB3C009E818F /* APIEndPoints.swift */,
+				A6208B872503EB3C009E818F /* Base Classes */,
+				A6208B892503EB3C009E818F /* Configurations */,
+				A6208B842503EB3C009E818F /* NetworkHandlers */,
+				A6208B8C2503EB3C009E818F /* Shared Elements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A6208B842503EB3C009E818F /* NetworkHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				A6208B852503EB3C009E818F /* Reachability.swift */,
+				A6208B862503EB3C009E818F /* WebServiceHandler.swift */,
+			);
+			path = NetworkHandlers;
+			sourceTree = "<group>";
+		};
+		A6208B872503EB3C009E818F /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A6208B882503EB3C009E818F /* BaseRequest.swift */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		A6208B892503EB3C009E818F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				A6208B8B2503EB3C009E818F /* Configurations.plist */,
+				A6208B952503EB95009E818F /* JeenyConfigurations.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		A6208B8C2503EB3C009E818F /* Shared Elements */ = {
+			isa = PBXGroup;
+			children = (
+				A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */,
+			);
+			path = "Shared Elements";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60C9ACF25039803001C813D /* LaunchScreen.storyboard in Resources */,
+				A6208B932503EB3C009E818F /* Configurations.plist in Resources */,
 				A60C9ACC25039803001C813D /* Assets.xcassets in Resources */,
 				A60C9ACA25039802001C813D /* Main.storyboard in Resources */,
 			);
@@ -536,20 +597,26 @@
 				A60C9B102503A037001C813D /* SaleInfo.swift in Sources */,
 				A60C9AC725039802001C813D /* BooksVC.swift in Sources */,
 				A60C9AFB25039F2A001C813D /* BooksInteractor.swift in Sources */,
+				A6208B982503EE3C009E818F /* JeenyGeneralElements.swift in Sources */,
 				A60C9B132503A037001C813D /* ReadingModes.swift in Sources */,
+				A6208B8E2503EB3C009E818F /* APIEndPoints.swift in Sources */,
 				A60C9B152503A037001C813D /* IndustryIdentifiers.swift in Sources */,
+				A6208B912503EB3C009E818F /* BaseRequest.swift in Sources */,
 				A60C9B142503A037001C813D /* Epub.swift in Sources */,
 				A60C9AC325039802001C813D /* AppDelegate.swift in Sources */,
 				A60C9AF725039DC2001C813D /* BookContract.swift in Sources */,
 				A60C9AFD25039F41001C813D /* BooksRouter.swift in Sources */,
+				A6208B902503EB3C009E818F /* WebServiceHandler.swift in Sources */,
 				A60C9B172503A037001C813D /* AccessInfo.swift in Sources */,
 				A60C9B182503A037001C813D /* ImageLinks.swift in Sources */,
 				A60C9B112503A037001C813D /* Items.swift in Sources */,
 				A60C9B192503A037001C813D /* Pdf.swift in Sources */,
 				A60C9AC525039802001C813D /* SceneDelegate.swift in Sources */,
+				A6208B962503EB95009E818F /* JeenyConfigurations.swift in Sources */,
 				A60C9B122503A037001C813D /* SearchInfo.swift in Sources */,
 				A60C9B162503A037001C813D /* GoogleBooks.swift in Sources */,
 				A60C9AF925039F1B001C813D /* BooksPresenter.swift in Sources */,
+				A6208B8F2503EB3C009E818F /* Reachability.swift in Sources */,
 				A60C9B0F2503A037001C813D /* VolumeInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

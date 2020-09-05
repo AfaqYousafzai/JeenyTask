@@ -8,7 +8,7 @@ target 'JeenyTask' do
   # Pods for JeenyTask
 
 	 pod 'PKHUD'
- 	 pod 'Alamofire', '4.9'
+ 	 pod 'Alamofire'
 	 pod 'Kingfisher'
 
   target 'JeenyTaskTests' do
