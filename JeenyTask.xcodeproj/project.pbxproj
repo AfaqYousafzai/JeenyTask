@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418F945F98414E8096CE5058 /* Pods_JeenyTask_JeenyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1061CBA74C6754BA28B4DB35 /* Pods_JeenyTask_JeenyTaskUITests.framework */; };
+		59D38F1D4728C03F3AE86A1F /* Pods_JeenyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E0C50DE6CCED7CAE7DDB1C /* Pods_JeenyTaskTests.framework */; };
 		A60C9AC325039802001C813D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AC225039802001C813D /* AppDelegate.swift */; };
 		A60C9AC525039802001C813D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AC425039802001C813D /* SceneDelegate.swift */; };
-		A60C9AC725039802001C813D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AC625039802001C813D /* ViewController.swift */; };
+		A60C9AC725039802001C813D /* BooksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AC625039802001C813D /* BooksVC.swift */; };
 		A60C9ACA25039802001C813D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C9AC825039802001C813D /* Main.storyboard */; };
 		A60C9ACC25039803001C813D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C9ACB25039803001C813D /* Assets.xcassets */; };
 		A60C9ACF25039803001C813D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C9ACD25039803001C813D /* LaunchScreen.storyboard */; };
 		A60C9ADA25039803001C813D /* JeenyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AD925039803001C813D /* JeenyTaskTests.swift */; };
 		A60C9AE525039803001C813D /* JeenyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AE425039803001C813D /* JeenyTaskUITests.swift */; };
+		A60C9AF725039DC2001C813D /* BookContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AF625039DC2001C813D /* BookContract.swift */; };
+		A60C9AF925039F1B001C813D /* BooksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AF825039F1B001C813D /* BooksPresenter.swift */; };
+		A60C9AFB25039F2A001C813D /* BooksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AFA25039F2A001C813D /* BooksInteractor.swift */; };
+		A60C9AFD25039F41001C813D /* BooksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9AFC25039F41001C813D /* BooksRouter.swift */; };
+		A60C9B0F2503A037001C813D /* VolumeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B042503A037001C813D /* VolumeInfo.swift */; };
+		A60C9B102503A037001C813D /* SaleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B052503A037001C813D /* SaleInfo.swift */; };
+		A60C9B112503A037001C813D /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B062503A037001C813D /* Items.swift */; };
+		A60C9B122503A037001C813D /* SearchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B072503A037001C813D /* SearchInfo.swift */; };
+		A60C9B132503A037001C813D /* ReadingModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B082503A037001C813D /* ReadingModes.swift */; };
+		A60C9B142503A037001C813D /* Epub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B092503A037001C813D /* Epub.swift */; };
+		A60C9B152503A037001C813D /* IndustryIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0A2503A037001C813D /* IndustryIdentifiers.swift */; };
+		A60C9B162503A037001C813D /* GoogleBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0B2503A037001C813D /* GoogleBooks.swift */; };
+		A60C9B172503A037001C813D /* AccessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0C2503A037001C813D /* AccessInfo.swift */; };
+		A60C9B182503A037001C813D /* ImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0D2503A037001C813D /* ImageLinks.swift */; };
+		A60C9B192503A037001C813D /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9B0E2503A037001C813D /* Pdf.swift */; };
+		E4D714B6A2E986D5F564D16E /* Pods_JeenyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E0D2AF3A1015A2DA8F933 /* Pods_JeenyTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1061CBA74C6754BA28B4DB35 /* Pods_JeenyTask_JeenyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeenyTask_JeenyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B4744C71C948CCF33F61740 /* Pods-JeenyTask-JeenyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTask-JeenyTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-JeenyTask-JeenyTaskUITests/Pods-JeenyTask-JeenyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		218E0D2AF3A1015A2DA8F933 /* Pods_JeenyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeenyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60C9ABF25039802001C813D /* JeenyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeenyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60C9AC225039802001C813D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A60C9AC425039802001C813D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A60C9AC625039802001C813D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A60C9AC625039802001C813D /* BooksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksVC.swift; sourceTree = "<group>"; };
 		A60C9AC925039802001C813D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A60C9ACB25039803001C813D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60C9ACE25039803001C813D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +70,27 @@
 		A60C9AE025039803001C813D /* JeenyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeenyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60C9AE425039803001C813D /* JeenyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyTaskUITests.swift; sourceTree = "<group>"; };
 		A60C9AE625039803001C813D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60C9AF625039DC2001C813D /* BookContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContract.swift; sourceTree = "<group>"; };
+		A60C9AF825039F1B001C813D /* BooksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksPresenter.swift; sourceTree = "<group>"; };
+		A60C9AFA25039F2A001C813D /* BooksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksInteractor.swift; sourceTree = "<group>"; };
+		A60C9AFC25039F41001C813D /* BooksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRouter.swift; sourceTree = "<group>"; };
+		A60C9B042503A037001C813D /* VolumeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeInfo.swift; sourceTree = "<group>"; };
+		A60C9B052503A037001C813D /* SaleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleInfo.swift; sourceTree = "<group>"; };
+		A60C9B062503A037001C813D /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		A60C9B072503A037001C813D /* SearchInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInfo.swift; sourceTree = "<group>"; };
+		A60C9B082503A037001C813D /* ReadingModes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingModes.swift; sourceTree = "<group>"; };
+		A60C9B092503A037001C813D /* Epub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epub.swift; sourceTree = "<group>"; };
+		A60C9B0A2503A037001C813D /* IndustryIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndustryIdentifiers.swift; sourceTree = "<group>"; };
+		A60C9B0B2503A037001C813D /* GoogleBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBooks.swift; sourceTree = "<group>"; };
+		A60C9B0C2503A037001C813D /* AccessInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessInfo.swift; sourceTree = "<group>"; };
+		A60C9B0D2503A037001C813D /* ImageLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLinks.swift; sourceTree = "<group>"; };
+		A60C9B0E2503A037001C813D /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		B6E0C50DE6CCED7CAE7DDB1C /* Pods_JeenyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeenyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.release.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		F493C10FEA23790CC182EE35 /* Pods-JeenyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTask.debug.xcconfig"; path = "Target Support Files/Pods-JeenyTask/Pods-JeenyTask.debug.xcconfig"; sourceTree = "<group>"; };
+		FA693E121DEFDF37403A7452 /* Pods-JeenyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTask.release.xcconfig"; path = "Target Support Files/Pods-JeenyTask/Pods-JeenyTask.release.xcconfig"; sourceTree = "<group>"; };
+		FB4B0CF367575F88E8DEF347 /* Pods-JeenyTask-JeenyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTask-JeenyTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-JeenyTask-JeenyTaskUITests/Pods-JeenyTask-JeenyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D714B6A2E986D5F564D16E /* Pods_JeenyTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D38F1D4728C03F3AE86A1F /* Pods_JeenyTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +114,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418F945F98414E8096CE5058 /* Pods_JeenyTask_JeenyTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F85ABDC52EAD2B710385434 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				218E0D2AF3A1015A2DA8F933 /* Pods_JeenyTask.framework */,
+				1061CBA74C6754BA28B4DB35 /* Pods_JeenyTask_JeenyTaskUITests.framework */,
+				B6E0C50DE6CCED7CAE7DDB1C /* Pods_JeenyTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D1304102CC7708662D65CAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F493C10FEA23790CC182EE35 /* Pods-JeenyTask.debug.xcconfig */,
+				FA693E121DEFDF37403A7452 /* Pods-JeenyTask.release.xcconfig */,
+				1B4744C71C948CCF33F61740 /* Pods-JeenyTask-JeenyTaskUITests.debug.xcconfig */,
+				FB4B0CF367575F88E8DEF347 /* Pods-JeenyTask-JeenyTaskUITests.release.xcconfig */,
+				C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */,
+				D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A60C9AB625039802001C813D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +152,8 @@
 				A60C9AD825039803001C813D /* JeenyTaskTests */,
 				A60C9AE325039803001C813D /* JeenyTaskUITests */,
 				A60C9AC025039802001C813D /* Products */,
+				5D1304102CC7708662D65CAB /* Pods */,
+				3F85ABDC52EAD2B710385434 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +170,10 @@
 		A60C9AC125039802001C813D /* JeenyTask */ = {
 			isa = PBXGroup;
 			children = (
-				A60C9AC225039802001C813D /* AppDelegate.swift */,
-				A60C9AC425039802001C813D /* SceneDelegate.swift */,
-				A60C9AC625039802001C813D /* ViewController.swift */,
-				A60C9AC825039802001C813D /* Main.storyboard */,
+				A60C9AF325039961001C813D /* Modules */,
+				A60C9AF225039886001C813D /* App */,
+				A60C9AF5250399BC001C813D /* StoryBoards */,
 				A60C9ACB25039803001C813D /* Assets.xcassets */,
-				A60C9ACD25039803001C813D /* LaunchScreen.storyboard */,
 				A60C9AD025039803001C813D /* Info.plist */,
 			);
 			path = JeenyTask;
@@ -128,6 +197,103 @@
 			path = JeenyTaskUITests;
 			sourceTree = "<group>";
 		};
+		A60C9AF225039886001C813D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AC225039802001C813D /* AppDelegate.swift */,
+				A60C9AC425039802001C813D /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A60C9AF325039961001C813D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AF42503997E001C813D /* Books */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A60C9AF42503997E001C813D /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9B0325039FAC001C813D /* Models */,
+				A60C9B0225039F9A001C813D /* Protocols */,
+				A60C9B0125039F8C001C813D /* Router */,
+				A60C9B0025039F7A001C813D /* Presenter */,
+				A60C9AFF25039F63001C813D /* Interactor */,
+				A60C9AFE25039F51001C813D /* Controllers */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		A60C9AF5250399BC001C813D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AC825039802001C813D /* Main.storyboard */,
+				A60C9ACD25039803001C813D /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A60C9AFE25039F51001C813D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AC625039802001C813D /* BooksVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A60C9AFF25039F63001C813D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AFA25039F2A001C813D /* BooksInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A60C9B0025039F7A001C813D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AF825039F1B001C813D /* BooksPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A60C9B0125039F8C001C813D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AFC25039F41001C813D /* BooksRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A60C9B0225039F9A001C813D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9AF625039DC2001C813D /* BookContract.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A60C9B0325039FAC001C813D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A60C9B0C2503A037001C813D /* AccessInfo.swift */,
+				A60C9B092503A037001C813D /* Epub.swift */,
+				A60C9B0B2503A037001C813D /* GoogleBooks.swift */,
+				A60C9B0D2503A037001C813D /* ImageLinks.swift */,
+				A60C9B0A2503A037001C813D /* IndustryIdentifiers.swift */,
+				A60C9B062503A037001C813D /* Items.swift */,
+				A60C9B0E2503A037001C813D /* Pdf.swift */,
+				A60C9B082503A037001C813D /* ReadingModes.swift */,
+				A60C9B052503A037001C813D /* SaleInfo.swift */,
+				A60C9B072503A037001C813D /* SearchInfo.swift */,
+				A60C9B042503A037001C813D /* VolumeInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A60C9AE925039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTask" */;
 			buildPhases = (
+				F2D76CBDFE7F9E33EC145E5D /* [CP] Check Pods Manifest.lock */,
 				A60C9ABB25039802001C813D /* Sources */,
 				A60C9ABC25039802001C813D /* Frameworks */,
 				A60C9ABD25039802001C813D /* Resources */,
+				DADEA3F085C6D3BACC14FC43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +320,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A60C9AEC25039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTaskTests" */;
 			buildPhases = (
+				AC5F672B4BC647219D73116E /* [CP] Check Pods Manifest.lock */,
 				A60C9AD125039803001C813D /* Sources */,
 				A60C9AD225039803001C813D /* Frameworks */,
 				A60C9AD325039803001C813D /* Resources */,
@@ -170,9 +339,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A60C9AEF25039803001C813D /* Build configuration list for PBXNativeTarget "JeenyTaskUITests" */;
 			buildPhases = (
+				40269899F3432ABF9776454E /* [CP] Check Pods Manifest.lock */,
 				A60C9ADC25039803001C813D /* Sources */,
 				A60C9ADD25039803001C813D /* Frameworks */,
 				A60C9ADE25039803001C813D /* Resources */,
+				6F22CA1A5B487E7CACC741EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +425,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40269899F3432ABF9776454E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JeenyTask-JeenyTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F22CA1A5B487E7CACC741EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JeenyTask-JeenyTaskUITests/Pods-JeenyTask-JeenyTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JeenyTask-JeenyTaskUITests/Pods-JeenyTask-JeenyTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JeenyTask-JeenyTaskUITests/Pods-JeenyTask-JeenyTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5F672B4BC647219D73116E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JeenyTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DADEA3F085C6D3BACC14FC43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JeenyTask/Pods-JeenyTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JeenyTask/Pods-JeenyTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JeenyTask/Pods-JeenyTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2D76CBDFE7F9E33EC145E5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JeenyTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A60C9ABB25039802001C813D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60C9AC725039802001C813D /* ViewController.swift in Sources */,
+				A60C9B102503A037001C813D /* SaleInfo.swift in Sources */,
+				A60C9AC725039802001C813D /* BooksVC.swift in Sources */,
+				A60C9AFB25039F2A001C813D /* BooksInteractor.swift in Sources */,
+				A60C9B132503A037001C813D /* ReadingModes.swift in Sources */,
+				A60C9B152503A037001C813D /* IndustryIdentifiers.swift in Sources */,
+				A60C9B142503A037001C813D /* Epub.swift in Sources */,
 				A60C9AC325039802001C813D /* AppDelegate.swift in Sources */,
+				A60C9AF725039DC2001C813D /* BookContract.swift in Sources */,
+				A60C9AFD25039F41001C813D /* BooksRouter.swift in Sources */,
+				A60C9B172503A037001C813D /* AccessInfo.swift in Sources */,
+				A60C9B182503A037001C813D /* ImageLinks.swift in Sources */,
+				A60C9B112503A037001C813D /* Items.swift in Sources */,
+				A60C9B192503A037001C813D /* Pdf.swift in Sources */,
 				A60C9AC525039802001C813D /* SceneDelegate.swift in Sources */,
+				A60C9B122503A037001C813D /* SearchInfo.swift in Sources */,
+				A60C9B162503A037001C813D /* GoogleBooks.swift in Sources */,
+				A60C9AF925039F1B001C813D /* BooksPresenter.swift in Sources */,
+				A60C9B0F2503A037001C813D /* VolumeInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +721,7 @@
 		};
 		A60C9AEA25039803001C813D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F493C10FEA23790CC182EE35 /* Pods-JeenyTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +740,7 @@
 		};
 		A60C9AEB25039803001C813D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA693E121DEFDF37403A7452 /* Pods-JeenyTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +759,7 @@
 		};
 		A60C9AED25039803001C813D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +782,7 @@
 		};
 		A60C9AEE25039803001C813D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +805,7 @@
 		};
 		A60C9AF025039803001C813D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B4744C71C948CCF33F61740 /* Pods-JeenyTask-JeenyTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +826,7 @@
 		};
 		A60C9AF125039803001C813D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4B0CF367575F88E8DEF347 /* Pods-JeenyTask-JeenyTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
