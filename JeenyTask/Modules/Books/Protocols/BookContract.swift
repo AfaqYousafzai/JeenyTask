@@ -40,7 +40,7 @@ protocol PresenterToInteractorBooksProtocol: class {
     var presenter: InteractorToPresenterBooksProtocol? { get set }
     
     func loadBooks()
-    func retrieveQuote(at index: Int)
+//    func retrieveQuote(at index: Int)
 }
 
 
@@ -50,8 +50,8 @@ protocol InteractorToPresenterBooksProtocol: class {
     func fetchBooksSuccess(items: [Items])
     func fetchBooksFailure(errorCode: Int)
     
-    func getBooksSuccess(_ item: Items)
-    func getBooksFailure()
+//    func getBooksSuccess(_ item: Items)
+//    func getBooksFailure()
     
 }
 
@@ -61,5 +61,5 @@ protocol PresenterToRouterBooksProtocol: class {
     
     static func createModule() -> UINavigationController
     
-    func pushToQuoteDetail(on view: PresenterToViewBooksProtocol, with item: Items)
+    func pushToBooksDetail(on view: PresenterToViewBooksProtocol, with item: Items)
 }

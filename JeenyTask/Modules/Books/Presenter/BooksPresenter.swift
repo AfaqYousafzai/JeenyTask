@@ -55,14 +55,14 @@ extension BooksPresenter: InteractorToPresenterBooksProtocol {
         view?.onFetchBooksFailure(error: "Couldn't fetch quotes: \(errorCode)")
     }
     
-    func getBooksSuccess(_ item: Items) {
-        router?.pushToQuoteDetail(on: view!, with: item)
-    }
-    
-    func getBooksFailure() {
-        view?.hideHUD()
-        print("Couldn't retrieve quote by index")
-    }
+//    func getBooksSuccess(_ item: Items) {
+//        router?.pushToBooksDetail(on: view!, with: item)
+//    }
+//
+//    func getBooksFailure() {
+//        view?.hideHUD()
+//        print("Couldn't retrieve quote by index")
+//    }
     
     
 }

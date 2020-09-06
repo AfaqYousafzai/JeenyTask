@@ -21,13 +21,8 @@ class BooksRouter: PresenterToRouterBooksProtocol {
     }
     
     // MARK: - Navigation
-    func pushToQuoteDetail(on view: PresenterToViewBooksProtocol, with items: Items) {
-        print("QuotesRouter is instructed to push QuoteDetailViewController onto the navigation stack.")
-//        let quoteDetailViewController = QuoteDetailRouter.createModule(with: quote)
-//            
-//        let viewController = view as! QuotesViewController
-//        viewController.navigationController?
-//            .pushViewController(quoteDetailViewController, animated: true)
+    func pushToBooksDetail(on view: PresenterToViewBooksProtocol, with items: Items) {
+        print("BooksRouter is instructed to push BooksDetailViewController onto the navigation stack.")
         
     }
     

@@ -23,7 +23,10 @@ class BooksVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         setupController()
         setupUI()
-        presenter?.viewDidLoad()
+        if allItems == nil {
+            presenter?.viewDidLoad()
+        }
+        
     }
     
     // MARK: - Actions
@@ -102,7 +105,9 @@ extension BooksVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BookDetailsVC") as? BookDetailsVC
+        vc?.items = allItems?[indexPath.row]
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
 

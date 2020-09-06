@@ -43,6 +43,7 @@
 		A65194F82504ECCD00DFE22B /* BooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65194F72504ECCD00DFE22B /* BooksCell.swift */; };
 		A65194FC2504F43E00DFE22B /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65194FA2504F43E00DFE22B /* ImageDataService.swift */; };
 		A65194FD2504F43E00DFE22B /* KingfisherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65194FB2504F43E00DFE22B /* KingfisherService.swift */; };
+		A65194FF2505156000DFE22B /* BookDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65194FE2505156000DFE22B /* BookDetailsVC.swift */; };
 		E4D714B6A2E986D5F564D16E /* Pods_JeenyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E0D2AF3A1015A2DA8F933 /* Pods_JeenyTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		A65194F72504ECCD00DFE22B /* BooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCell.swift; sourceTree = "<group>"; };
 		A65194FA2504F43E00DFE22B /* ImageDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
 		A65194FB2504F43E00DFE22B /* KingfisherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherService.swift; sourceTree = "<group>"; };
+		A65194FE2505156000DFE22B /* BookDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsVC.swift; sourceTree = "<group>"; };
 		B6E0C50DE6CCED7CAE7DDB1C /* Pods_JeenyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeenyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.release.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				A60C9AC625039802001C813D /* BooksVC.swift */,
+				A65194FE2505156000DFE22B /* BookDetailsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				A60C9AC325039802001C813D /* AppDelegate.swift in Sources */,
 				A60C9AF725039DC2001C813D /* BookContract.swift in Sources */,
 				A60C9AFD25039F41001C813D /* BooksRouter.swift in Sources */,
+				A65194FF2505156000DFE22B /* BookDetailsVC.swift in Sources */,
 				A6208B902503EB3C009E818F /* WebServiceHandler.swift in Sources */,
 				A60C9B172503A037001C813D /* AccessInfo.swift in Sources */,
 				A60C9B182503A037001C813D /* ImageLinks.swift in Sources */,

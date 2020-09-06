@@ -52,12 +52,12 @@ class BooksInteractor: PresenterToInteractorBooksProtocol {
         
     }
     
-    func retrieveQuote(at index: Int) {
-        guard let items = self.items, items.indices.contains(index) else {
-            self.presenter?.getBooksFailure()
-            return
-        }
-        self.presenter?.getBooksSuccess(self.items![index])
-    }
+//    func retrieveBooks(at index: Int) {
+//        guard let items = self.items, items.indices.contains(index) else {
+//            self.presenter?.getBooksFailure()
+//            return
+//        }
+//        self.presenter?.getBooksSuccess(self.items![index])
+//    }
 
 }
