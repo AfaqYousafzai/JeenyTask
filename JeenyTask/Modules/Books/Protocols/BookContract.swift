@@ -11,8 +11,8 @@ import UIKit
 
 // MARK: View Output (Presenter -> View)
 protocol PresenterToViewBooksProtocol: class {
-    func onFetchQuotesSuccess()
-    func onFetchQuotesFailure(error: String)
+    func onFetchBooksSuccess(items: [Items])
+    func onFetchBooksFailure(error: String)
     
     func showHUD()
     func hideHUD()

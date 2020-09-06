@@ -46,13 +46,13 @@ extension BooksPresenter: InteractorToPresenterBooksProtocol {
         print("Presenter receives the result from Interactor after it's done its job.")
         counter = items.count
         view?.hideHUD()
-        view?.onFetchQuotesSuccess()
+        view?.onFetchBooksSuccess(items: items)
     }
     
     func fetchBooksFailure(errorCode: Int) {
         print("Presenter receives the result from Interactor after it's done its job.")
         view?.hideHUD()
-        view?.onFetchQuotesFailure(error: "Couldn't fetch quotes: \(errorCode)")
+        view?.onFetchBooksFailure(error: "Couldn't fetch quotes: \(errorCode)")
     }
     
     func getBooksSuccess(_ item: Items) {

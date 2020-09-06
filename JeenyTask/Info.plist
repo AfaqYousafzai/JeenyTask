@@ -67,5 +67,10 @@
 		<key>Configuration</key>
 		<string>JeenySettings</string>
 	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

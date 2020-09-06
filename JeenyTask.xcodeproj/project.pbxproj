@@ -40,6 +40,9 @@
 		A6208B962503EB95009E818F /* JeenyConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B952503EB95009E818F /* JeenyConfigurations.swift */; };
 		A6208B982503EE3C009E818F /* JeenyGeneralElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */; };
 		A6208B9B2504004D009E818F /* BooksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6208B9A2504004D009E818F /* BooksRequest.swift */; };
+		A65194F82504ECCD00DFE22B /* BooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65194F72504ECCD00DFE22B /* BooksCell.swift */; };
+		A65194FC2504F43E00DFE22B /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65194FA2504F43E00DFE22B /* ImageDataService.swift */; };
+		A65194FD2504F43E00DFE22B /* KingfisherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65194FB2504F43E00DFE22B /* KingfisherService.swift */; };
 		E4D714B6A2E986D5F564D16E /* Pods_JeenyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E0D2AF3A1015A2DA8F933 /* Pods_JeenyTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +104,9 @@
 		A6208B952503EB95009E818F /* JeenyConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyConfigurations.swift; sourceTree = "<group>"; };
 		A6208B972503EE3C009E818F /* JeenyGeneralElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeenyGeneralElements.swift; sourceTree = "<group>"; };
 		A6208B9A2504004D009E818F /* BooksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRequest.swift; sourceTree = "<group>"; };
+		A65194F72504ECCD00DFE22B /* BooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCell.swift; sourceTree = "<group>"; };
+		A65194FA2504F43E00DFE22B /* ImageDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
+		A65194FB2504F43E00DFE22B /* KingfisherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherService.swift; sourceTree = "<group>"; };
 		B6E0C50DE6CCED7CAE7DDB1C /* Pods_JeenyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeenyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F9F502C6507221FAD426D6 /* Pods-JeenyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D683D3366978AB46DF644756 /* Pods-JeenyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeenyTaskTests.release.xcconfig"; path = "Target Support Files/Pods-JeenyTaskTests/Pods-JeenyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +239,7 @@
 		A60C9AF42503997E001C813D /* Books */ = {
 			isa = PBXGroup;
 			children = (
+				A65194F62504ECAE00DFE22B /* Cells */,
 				A6208B992503FFEF009E818F /* Requests */,
 				A60C9B0325039FAC001C813D /* Models */,
 				A60C9B0225039F9A001C813D /* Protocols */,
@@ -314,6 +321,7 @@
 		A6208B822503EA74009E818F /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A65194F92504F40300DFE22B /* Services */,
 				A6208B842503EB3C009E818F /* NetworkHandlers */,
 				A6208B832503EB3C009E818F /* APIEndPoints.swift */,
 				A6208B872503EB3C009E818F /* Base Classes */,
@@ -363,6 +371,23 @@
 				A6208B9A2504004D009E818F /* BooksRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		A65194F62504ECAE00DFE22B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A65194F72504ECCD00DFE22B /* BooksCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A65194F92504F40300DFE22B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A65194FA2504F43E00DFE22B /* ImageDataService.swift */,
+				A65194FB2504F43E00DFE22B /* KingfisherService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,6 +632,7 @@
 			files = (
 				A6208B9B2504004D009E818F /* BooksRequest.swift in Sources */,
 				A60C9B102503A037001C813D /* SaleInfo.swift in Sources */,
+				A65194F82504ECCD00DFE22B /* BooksCell.swift in Sources */,
 				A60C9AC725039802001C813D /* BooksVC.swift in Sources */,
 				A60C9AFB25039F2A001C813D /* BooksInteractor.swift in Sources */,
 				A6208B982503EE3C009E818F /* JeenyGeneralElements.swift in Sources */,
@@ -625,10 +651,12 @@
 				A60C9B192503A037001C813D /* Pdf.swift in Sources */,
 				A60C9AC525039802001C813D /* SceneDelegate.swift in Sources */,
 				A6208B962503EB95009E818F /* JeenyConfigurations.swift in Sources */,
+				A65194FD2504F43E00DFE22B /* KingfisherService.swift in Sources */,
 				A60C9B122503A037001C813D /* SearchInfo.swift in Sources */,
 				A60C9B162503A037001C813D /* GoogleBooks.swift in Sources */,
 				A60C9AF925039F1B001C813D /* BooksPresenter.swift in Sources */,
 				A6208B8F2503EB3C009E818F /* Reachability.swift in Sources */,
+				A65194FC2504F43E00DFE22B /* ImageDataService.swift in Sources */,
 				A60C9B0F2503A037001C813D /* VolumeInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@ import Foundation
 enum APIEndPoints {
     
     enum BooksEndPoint: String {
-        case V1 = "books/v1/volumes?q=isbn:0747532699"
+        case V1 = "books/v1/volumes?q=intitle:flower"//isbn:0747532699"
+        //case V1 = "books/v1/volumes/zyTCAlFPjgYC?key=055380457X"
     }
 }

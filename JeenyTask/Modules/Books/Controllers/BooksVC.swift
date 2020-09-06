@@ -13,6 +13,8 @@ class BooksVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var allItems: [Items]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,15 +46,17 @@ class BooksVC: UIViewController {
 
 extension BooksVC: PresenterToViewBooksProtocol{
     
-    func onFetchQuotesSuccess() {
+    func onFetchBooksSuccess(items: [Items]) {
         print("View receives the response from Presenter and updates itself.")
+        allItems = items
         self.tableView.reloadData()
         self.refreshControl.endRefreshing()
     }
     
-    func onFetchQuotesFailure(error: String) {
+    func onFetchBooksFailure(error: String) {
         print("View receives the response from Presenter with error: \(error)")
         self.refreshControl.endRefreshing()
+        JeenyGeneralElements.showAlertWithMessage("\(error)", sender: nil)
     }
     
     func showHUD() {
@@ -69,23 +73,44 @@ extension BooksVC: PresenterToViewBooksProtocol{
 extension BooksVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.numberOfRowsInSection() ?? 0
+        return allItems?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 104
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BooksCell", for: indexPath) as! BooksCell
+        cell.titleLbl.text = allItems?[indexPath.row].volumeInfo?.title
+        
+        if let smallImage = allItems?[indexPath.row].volumeInfo?.imageLinks?.smallThumbnail {
+            // Do any additional setup after loading the view.
+            let httpsurlString = "https" + smallImage.dropFirst(4)
+            DispatchQueue.main.async {
+                
+                let url = URL(string: httpsurlString)
+                cell.bookImageView.kf.setImage(with: url)
+                
+            }
+        }
+        else {
+            cell.bookImageView.image = UIImage(named: "bookIcon")
+        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
     }
 }
 
 // MARK: - UI Setup
 extension BooksVC {
     func setupUI() {
+        
+        tableView.addSubview(refreshControl)
         
         self.navigationItem.title = "Google Books"
     }

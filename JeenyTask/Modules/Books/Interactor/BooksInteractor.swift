@@ -36,6 +36,9 @@ class BooksInteractor: PresenterToInteractorBooksProtocol {
                 if code == 200 {
                     self.presenter?.fetchBooksSuccess(items: self.items ?? [])
                 }
+                else {
+                    self.presenter?.fetchBooksFailure(errorCode: code)
+                }
             }
             catch let err {
                 print(err.localizedDescription)
