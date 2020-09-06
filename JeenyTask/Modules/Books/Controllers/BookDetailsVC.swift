@@ -11,6 +11,9 @@ import UIKit
 class BookDetailsVC: UIViewController {
     
     @IBOutlet weak var bookImageView: UIImageView!
+    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var countryLbl: UILabel!
+    @IBOutlet weak var saleabilityLbl: UILabel!
     
     var items: Items?
 
@@ -21,6 +24,20 @@ class BookDetailsVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        if let desc = items?.volumeInfo?.description {
+            descriptionLbl.text = "Description : " + desc
+        }
+        else {
+            descriptionLbl.text = "Title : " + "\(items?.volumeInfo?.title ?? "")"
+        }
+        
+        if let country = items?.saleInfo?.country {
+            countryLbl.text = "Country : " + country
+        }
+        if let saleability = items?.saleInfo?.saleability {
+            saleabilityLbl.text = "Saleability : " + saleability
+        }
         
         let urlString = items?.volumeInfo?.imageLinks?.thumbnail ?? ""
         let httpsurlString = "https" + urlString.dropFirst(4)

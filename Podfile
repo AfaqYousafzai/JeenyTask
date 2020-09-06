@@ -10,6 +10,7 @@ target 'JeenyTask' do
 	 pod 'PKHUD'
  	 pod 'Alamofire'
 	 pod 'Kingfisher'
+	 pod 'IQKeyboardManagerSwift'
 
   target 'JeenyTaskTests' do
     inherit! :search_paths
