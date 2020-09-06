@@ -25,11 +25,14 @@ class BooksVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         setupController()
         setupUI()
+        setNavigationTitle()
+        initialSettings()
+    }
+    
+    func initialSettings() {
         if allItems == nil {
-            
             presenter?.viewDidLoad()
         }
-        
     }
     
     // MARK: - Actions
@@ -122,6 +125,9 @@ extension BooksVC {
         
         tableView.addSubview(refreshControl)
         
+    }
+    
+    func setNavigationTitle() {
         self.navigationItem.title = "Google Books"
     }
     

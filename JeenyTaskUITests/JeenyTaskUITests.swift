@@ -9,10 +9,13 @@
 import XCTest
 
 class JeenyTaskUITests: XCTestCase {
+    
+    let app = XCUIApplication()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
+        app.launch()
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
@@ -39,5 +42,10 @@ class JeenyTaskUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+    func testIsImageViewNil() {
+        let imageView = app.images["main_image"]
+        XCTAssertNotNil(imageView)
     }
 }

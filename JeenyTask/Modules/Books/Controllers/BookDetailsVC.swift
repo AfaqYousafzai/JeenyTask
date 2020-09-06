@@ -24,6 +24,11 @@ class BookDetailsVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        initialSettings()
+    }
+    
+    func initialSettings() {
         
         if let desc = items?.volumeInfo?.description {
             descriptionLbl.text = "Description : " + desc
@@ -42,7 +47,6 @@ class BookDetailsVC: UIViewController {
         let urlString = items?.volumeInfo?.imageLinks?.thumbnail ?? ""
         let httpsurlString = "https" + urlString.dropFirst(4)
         getImageDataFromURL(urlString: httpsurlString)
-        
     }
     
     func getImageDataFromURL(urlString: String) {
